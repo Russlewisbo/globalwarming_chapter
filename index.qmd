@@ -1,0 +1,384 @@
+---
+title: "Phenotypic and Genotypic Adaptation of Fungi to a Warming and Destabilized Planet"
+authors:
+  - name: Dimitrios P. Kontoyiannis
+    corresponding: true
+    email: dkontoyi@mdanderson.org
+    affiliations:
+      - name: The University of Texas MD Anderson Cancer Center
+        department: Division of Internal Medicine, Department of Infectious Diseases, Infection Control and Employee Health
+        city: Houston
+        state: TX
+        country: USA
+  - name: Russell E. Lewis
+    email: russelledward.lewis@unipd.it
+    affiliations:
+      - name: University of Padua
+        department: Department of Molecular Medicine
+        city: Padua
+        country: Italy
+keywords: [Thermal adaptation, Thermotolerance, Disaster microbiology, Antifungal resistance, Candida auris, Mucorales, Transposon mobilization, One Health]
+abstract: |
+  Fungi are an environmental kingdom whose selective landscape humans are actively rewriting. Two distinct kinds of climate pressure act on that landscape: chronic change in mean temperature, humidity and atmospheric composition, and acute geo-meteorological disturbance in the form of tornadoes, floods, wildfires, dust storms and seismic events. The two act through partly different mechanisms — the first largely through selection, the second largely through dispersal, host trauma and combinatorial stress. This chapter reviews what is now experimentally established about how fungi adapt to these pressures, and separates it from what remains inference. Three mechanistic findings anchor the field: growth at elevated temperature increases virulence and oxidative-stress tolerance in Mucorales through calcineurin-dependent signalling; host temperature is itself mutagenic, mobilizing transposable elements in *Cryptococcus* and inducing pan-resistant, hypervirulent mutants in *Rhodosporidiobolus*; and physical stresses such as extreme shear can induce transient hypervirulence through the same chaperone and phosphatase networks that mediate thermal adaptation. Against this, the leap to a human fungal pandemic is not supported: the thermal barrier imposed by mammalian endothermy remains wide, thermotolerance alone is a weak predictor of pathogenicity, and the best-documented recent emergences — *Candida auris*, azole-resistant *Aspergillus fumigatus*, terbinafine-resistant *Trichophyton indotineae* — are as much stories of antifungal selection pressure, healthcare practice and poverty as of temperature. We propose an evidence-graded framework, an explicit set of falsifiable criteria for climate attribution, and a research agenda in which the limiting factor is study design rather than rhetoric.
+---
+
+# Introduction: Fungi in a Destabilized Biosphere {#sec-1}
+
+## The Fungal Kingdom as a Climate-Responsive System {#sec-1-1}
+
+The fungal kingdom is large, ancient and overwhelmingly environmental. Conservative estimates place global fungal diversity between 2.2 and 3.8 million species, of which fewer than 150,000 have been formally described [@hawksworth2017]. Of that vast pool, only a few hundred species have ever been implicated in human disease, and yet the aggregate clinical burden is now substantial: current global estimates attribute roughly 6.5 million invasive fungal infections and 3.8 million deaths annually to fungal disease, a figure that has risen sharply as estimation methods have improved [@denning2024]. The World Health Organization's first fungal priority pathogens list formalized what the mycological community had argued for two decades — that fungi had been systematically neglected in global health policy [@fisher2023].
+
+Fungi are also, in a literal sense, a planetary system. They mediate a large fraction of terrestrial carbon and nutrient cycling; mycorrhizal mycelium alone has been estimated to receive on the order of 13 Gt of CO₂-equivalent carbon from plants each year, making it one of the largest annual carbon fluxes in the terrestrial biosphere [@hawkins2023]. Recent syntheses have argued that fungal responses to global change should be treated as an Earth-system variable rather than a specialist concern [@case2025]. This dual identity — ecosystem engineers that include a small number of opportunistic pathogens — is what makes the question posed in this chapter unusual. We are not asking whether a known pathogen will become more common. We are asking whether human alteration of the physical environment is changing the *properties* of an enormous environmental reservoir, and whether the small pathogenic subset is being enlarged or intensified as a by-product.
+
+That question has become empirically tractable only recently, and the reason is instructive. For most of the twentieth century, fungal adaptation was studied either as agricultural fungicide resistance or as laboratory evolution in *Saccharomyces*. The convergence of three developments — affordable whole-genome sequencing of environmental isolates, tractable invertebrate and tissue-model infection systems, and gridded climate data of sufficient resolution to be joined to isolate metadata — has made it possible to ask mechanistic questions about adaptation in the field rather than only in the laboratory [@seidel2024; @nnadi2021].
+
+## Two Axes of Change: Chronic Warming and Acute Disturbance {#sec-1-2}
+
+It is analytically useful, and in our view necessary, to separate two kinds of climate pressure (@fig-framework).
+
+![Two axes of climate pressure on the fungal kingdom. Chronic drivers (rising mean temperature, aridification, elevated CO~2~ and UV, glacial retreat and permafrost thaw, sea-level rise) and acute drivers (tornadoes and cyclones, floods, wildfires, dust storms, earthquakes and tsunamis) act on fungal populations through three mediating processes—selection, dispersal and niche change—that lead to increased exposure, expanded geographic range, increased virulence or resistance of adapted lineages, and increased host susceptibility. A socioeconomic gradient of poverty, conflict, migration and health inequality modifies every link. *[CAPTION TO CONFIRM]*](figures/fig1.png){#fig-framework}
+
+The **chronic axis** comprises slow, directional change: rising mean surface temperature, shifts in aridity and humidity regimes, elevated atmospheric CO₂, altered ultraviolet exposure, glacial retreat and permafrost thaw, and sea-level rise with coastal submersion. These act principally as *selective* pressures. They change which genotypes in an environmental population are favoured, over timescales of many fungal generations, and they change the geographic envelope within which a species can complete its life cycle.
+
+The **acute axis** comprises discrete, high-energy events: tornadoes and tropical cyclones, extreme rainfall and flooding, wildfires, dust storms, earthquakes and tsunamis. These act principally through *dispersal*, through *host trauma and displacement*, and through the delivery of intense, combinatorial physical stress to fungal cells — shear, desiccation, heat, oxidative challenge — over minutes to days rather than decades. The recognition that this second axis constitutes a coherent field of study in its own right, distinct from classical environmental mycology, is the contribution of disaster microbiology [@smithcasadevall2022; @smith2023].
+
+Both axes are modified throughout by a socioeconomic gradient. Poverty, armed conflict, forced migration, urban crowding and unequal access to diagnostics and antifungals determine who is exposed, who is susceptible, and who is treated — and they do so more powerfully than any biological variable discussed in this chapter [@jenks2023]. A chapter on fungal adaptation that omits this would misrepresent the epidemiology it seeks to explain.
+
+## Scope and Roadmap {#sec-1-3}
+
+We restrict the chapter to fungal adaptation and its consequences. @sec-2 sets out the thermal restriction hypothesis, the quantitative argument on which most climate–mycology reasoning rests, and its principal weakness. @sec-3 and @sec-4 separate phenotypic (plastic, reversible) from genotypic (heritable) adaptation, because conflating them is the most common error in this literature. @sec-5 tests the framework against six sentinel emergences, grading the strength of climate attribution in each. @sec-6 treats anthropogenic co-drivers that are often mislabelled as climate effects. @sec-7 develops the disaster axis. @sec-8 places human mycoses in the broader One Health context of plant, crop and wildlife disease, where climate-driven fungal mortality is already demonstrable. @sec-9 addresses the pandemic question with explicit criteria, and @sec-10 proposes a research and response agenda. Clinical management and the antifungal development pipeline are outside our scope; both are reviewed elsewhere [@lax2024].
+
+# The Thermal Restriction Hypothesis and Its Limits {#sec-2}
+
+## Endothermy as a Barrier to Fungal Infection {#sec-2-1}
+
+The dominant conceptual framework in this field holds that mammalian body temperature functions as a thermal barrier excluding the great majority of fungi from vertebrate hosts. Its empirical basis is a survey of fungal thermal tolerance across culture-collection isolates showing that the proportion of species capable of growth declines steeply with increasing temperature, such that each additional degree above roughly 30 °C excludes a substantial further fraction of the environmental mycobiota [@robert2009]. Modelling of the trade-off between the metabolic cost of endothermy and the protection it confers against fungal infection identified an optimum close to observed mammalian body temperatures, suggesting that thermal exclusion of fungi may have been one selective factor shaping endothermy itself [@bergman2010]. The corollary argument — that the fungal barrier contributed to mammalian radiation after the Cretaceous–Paleogene extinction, when fungal biomass is thought to have been abundant — remains an evolutionary hypothesis rather than a demonstrated fact, but it has proved a productive one [@casadevall2012].
+
+The prediction that follows is simple and testable: sustained environmental warming should select for thermotolerance in environmental fungi, gradually enlarging the subset able to grow at mammalian temperature, and therefore enlarging the pool of potential opportunistic pathogens [@garciasolache2010; @casadevall2020].
+
+## The Narrowing Thermal Exclusion Zone {#sec-2-2}
+
+Two trends converge on this barrier (@fig-thermal). The first is environmental warming itself. The second, less often noted, is that human core temperature has fallen. Analysis of three cohorts spanning more than 150 years of US records found a monotonic decline of approximately 0.03 °C per birth decade, placing the modern mean near 36.6 °C rather than the canonical 37.0 °C [@protsiv2020]. The gradient is therefore closing from both sides.
+
+![The thermal exclusion zone and its narrowing. (**A**) Total growth range (light grey) and optimum range (dark grey) for selected human, emerging, environmental and wildlife-pathogenic fungi, plotted against modern (solid line) and 1860s (dashed line) human core temperature and avian body temperature (dotted band). The hatched region marks the thermal exclusion zone between typical environmental optima and mammalian core temperature. (**B**) Schematic of the two converging trends: rising environmental temperature and a fall in human core temperature of approximately 0.03 °C per birth decade since the 1860s [@protsiv2020]. Growth ranges are approximate and compiled from the literature; the environmental trend is schematic and not derived from a time series. *[CAPTION TO CONFIRM]*](figures/fig2.png){#fig-thermal}
+
+The magnitude, however, deserves emphasis, because it is routinely overstated in secondary commentary. The difference between the thermal optimum of a typical soil fungus and mammalian core temperature remains on the order of 10–20 °C, and neither trend closes a gap of that size on a decadal timescale. What warming plausibly does is shift the *upper tail* of the environmental thermal-tolerance distribution — and since the pathogenic subset is drawn from precisely that tail, modest shifts in the tail can matter disproportionately even when the mean barely moves. This is a different and more defensible claim than the one usually made.
+
+## What Adaptation Must Accomplish {#sec-2-3}
+
+Growth at host temperature is necessary but far from sufficient for pathogenicity. A lineage must also survive host innate immune attack, acquire nutrients in host tissue, tolerate host pH and hypoxia, and possess some route of exposure or transmission to reach susceptible hosts at adequate frequency. Comparative genomic analysis of the repeated, independent evolution of human pathogenicity in fungi indicates that it arises from combinations of traits — thermotolerance among them, but also cell-wall remodelling, secondary metabolism, nutrient scavenging and stress-response architecture — assembled along many different trajectories rather than through a single adaptive route [@rokas2022]. There is no "pathogenicity gene" whose acquisition warming would accelerate.
+
+This has an important consequence for how climate claims should be phrased. Warming can reasonably be expected to enlarge the *candidate pool* from which opportunistic pathogens may be recruited. Whether any given candidate becomes a clinically relevant pathogen depends on factors — chiefly host susceptibility and exposure route — that warming affects only indirectly.
+
+## Counterarguments and the Specificity Problem {#sec-2-4}
+
+The strongest objection to the thermal restriction argument is one of specificity. Tens of thousands of fungal species already grow at 37 °C without causing human disease; thermotolerance is thus a necessary but very weakly predictive trait, and its increasing prevalence in environmental populations does not by itself forecast new human pathogens. This objection has been made forcefully in the mycological literature and should be met directly rather than deflected [**VERIFY**: Money NP (2024) *Fungal Biology* — co-author to supply full citation for the sceptical position summarized here]{.verify}.
+
+We accept the objection and draw two conclusions from it. First, thermotolerance should be treated as a *screening* variable, not a risk marker: it identifies where to look, not what will happen. Second, the more informative climate-linked question is not "how many species can now grow at 37 °C" but "does thermal stress change the rate at which genotypes of consequence — resistant, hypervirulent, immune-evasive — are generated and selected?" That question is mechanistic, experimentally addressable, and the subject of @sec-3 and @sec-4. @tbl-mechanisms summarizes the mechanisms considered there with an explicit evidence grade for each.
+
+A second objection concerns attribution. Most published associations between climatic variables and fungal disease are ecological correlations computed over datasets assembled for other purposes, and they cannot distinguish climate effects from concurrent changes in diagnostics, surveillance intensity, antifungal use, land use or population susceptibility. We return to this problem in @sec-4-6 and apply it explicitly to each case study in @sec-5.
+
+| **Mechanism**                                                  | **Principal organisms**                                    | **Experimental system**                             | **Evidence grade**                                             | **Key references** |
+|:-------------|:------------|:-----------|:-------------|:-------------------|
+| Heat-shock response (Hsf1, Hsp90, Hsp104, trehalose)           | *Candida albicans*, *Saccharomyces cerevisiae*, *C. auris* | Genetics, murine virulence                          | Established                                                    | [@nicholls2010; @morano2011] |
+| Hsp90 as a capacitor releasing cryptic variation               | *C. albicans*, *A. fumigatus*                              | Drug-resistance evolution in vitro                  | Established (mechanism); emerging (climate relevance)          | [@cowen2005; @cowen2009] |
+| Calcineurin–Crz1 signalling in thermal virulence               | Mucorales, *Cryptococcus*, *Aspergillus*                   | Fly and murine models, inhibitor studies            | Established (pathway); to be verified (thermal-virulence data) | [@steinbach2007; @juvvadi2016]; authors’ unpublished/presented data [**VERIFY**]{.verify} |
+| HOG/stress-activated protein kinase module                     | Multiple human pathogens                                   | Genetics, stress assays                             | Established                                                    | [@day2019] |
+| Oxidative-stress cross-protection after thermal priming        | Mucorales, *Candida*                                       | In vitro priming, phagocyte assays                  | Emerging                                                       | [@harish2022]; authors’ presented data [**VERIFY**]{.verify} |
+| Melanin-mediated thermal and radiation buffering               | *Cryptococcus*, black yeasts, *Rhodotorula*                | Biophysics, environmental isolates                  | Established (function); emerging (climate selection)           | [@dadachova2007; @cordero2017; @smith2025] |
+| Mechanical/shear-stress-induced transient hypervirulence       | Mucorales                                                  | Shear challenge + fly model                         | Emerging (single laboratory)                                   | [@wurster2020] [**VERIFY**]{.verify} |
+| Temperature-stimulated transposon mobilization                 | *Cryptococcus deneoformans*                                | Genome-wide mutation accumulation, murine infection | Established                                                    | [@gusa2020; @gusa2023] |
+| Host-temperature-induced point mutagenesis                     | *Rhodosporidiobolus fluvialis*                             | Murine passage, in vitro evolution                  | Established mechanism; narrow taxonomic basis                  | [@huang2024] |
+| Aneuploidy and copy-number variation under stress              | *C. albicans*, *C. auris*, *Cryptococcus*                  | Comparative genomics, in vitro selection            | Established                                                    | [@selmecki2006; @bennett2014; @steenwyk2016] |
+| RNAi-dependent epimutation                                     | *Mucor* spp.                                               | Drug-selection assays                               | Established (mechanism)                                        | [@calo2014] |
+| Directed/experimental evolution of thermotolerance             | Filamentous fungi                                          | Continuous culture                                  | Established (proof of principle)                               | [@decrecy2009] |
+| Environmental thermal selection generating new human pathogens | —                                                          | —                                                   | Hypothesis                                                     | [@casadevall2019; @seidel2024] |
+
+: Mechanisms of fungal thermal and physical-stress adaptation, with evidence grade {#tbl-mechanisms}
+
+# Phenotypic Adaptation: Plasticity Under Thermal and Physical Stress {#sec-3}
+
+::: {.callout-note}
+**Author note:** Fig. 3 was not cited in the Word draft. It is placed here provisionally; add a cross-reference (@fig-mechanisms) where appropriate or remove.
+:::
+
+![Phenotypic and genotypic routes to fungal adaptation under thermal and physical stress. Left: plastic, reversible responses—the Hsf1-driven heat-shock response (Hsp90, Hsp104, trehalose), calcineurin–Crz1 signalling (inhibited by cyclosporine A) and the HOG/SAPK module—that produce morphogenesis, oxidative-stress tolerance, immune evasion and transient hypervirulence. Right: heritable changes—transposable-element mobilization at 37 °C (*Cryptococcus*), temperature-induced point mutagenesis (*Rhodosporidiobolus*), aneuploidy and copy-number variation, and RNAi-dependent epimutation (*Mucor*)—that produce antifungal resistance, hypervirulence and adaptive genotypes. Hsp90 acts as a capacitor that buffers cryptic genetic variation and releases it under thermal stress. Evidence grade: E, established; e, emerging; H, hypothesis; †, established on a narrow taxonomic basis. *[CAPTION TO CONFIRM]*](figures/fig3.png){#fig-mechanisms}
+
+Phenotypic adaptation, in the sense used here, means a change in the properties of a fungal cell or population that occurs without any change in DNA sequence and that reverses when the inducing stimulus is withdrawn. It is fast, it is reversible, and it is the first thing a fungus does when the environment changes. Because it can produce large changes in virulence within hours, it is also frequently mistaken for evolution.
+
+## Thermotolerance as a Plastic and Heritable Trait {#sec-3-1}
+
+### The Heat-Shock Machinery {#sec-3-1-1}
+
+The canonical response to a temperature upshift is transcriptional reprogramming through heat-shock transcription factors, most prominently Hsf1, with downstream induction of chaperones and accumulation of the compatible solute trehalose [@morano2011]. In *C. albicans*, Hsf1 activation is required not merely for thermal survival but for full virulence, establishing that thermal-stress machinery and pathogenicity are mechanistically coupled rather than merely correlated [@nicholls2010]. The Hsp90 chaperone occupies a central node: it stabilizes the client proteins on which both stress signalling and drug-target function depend, and its pharmacological or genetic compromise sensitizes fungi to both heat and antifungals [@cowen2009]. Hsp90 also constitutes the mechanistic bridge to @sec-4, for reasons discussed in 4.5.
+
+A related concept with direct climate relevance is priming. Sublethal stress exposure can leave a cell better able to survive a subsequent, more severe challenge — sometimes of a different kind — and in fungi this phenomenon has been documented across thermal, oxidative and cell-wall stresses [@harish2022]. Because climate-associated stresses are rarely delivered singly, priming is likely to be the rule rather than the exception in natural settings, and it complicates any inference from single-stress laboratory experiments to field behaviour. Fungal pathogens can additionally retain a form of adaptive memory of prior host-associated stress that alters subsequent immune recognition [@brown2018].
+
+### Calcineurin Signalling and Morphogenesis at Elevated Temperature {#sec-3-1-2}
+
+The calcium–calmodulin-dependent protein phosphatase calcineurin is the best-characterized node linking thermal stress to fungal virulence. It is required for growth at host temperature, for morphogenesis and for cell-wall integrity across *Cryptococcus*, *Aspergillus*, *Candida* and the Mucorales, and its inhibition by cyclosporine A or tacrolimus attenuates virulence in animal models [@steinbach2007; @juvvadi2016].
+
+This pathway carries the most direct experimental evidence that warming can increase virulence rather than merely permit growth. Culturing *Rhizopus arrhizus* and *Mucor circinelloides* at 37 °C and 42 °C rather than 30 °C produced isolates with greater virulence in an invertebrate infection model and greater tolerance of oxidative stress, and the high-temperature virulence enhancement was abolished by calcineurin inhibition [**VERIFY**: data shown in the authors' presentation; source publication to be supplied — see co_editing_notes.md]{.verify}. The phenotype is therefore not a non-specific consequence of faster growth: it is an actively signalled state. Two features matter for the chapter's argument. First, the effect is achieved by *pre-exposure*, not by selection — the organisms were not evolved. Second, it is reversible, which places it firmly in the phenotypic category despite its magnitude. Recent commentary has framed the convergence of thermotolerant fungi and altered host immunity as an emerging concern deserving systematic study [@lamoth2026], and has extended the argument to invertebrate-associated cutaneous invasive fungal infection under warming [@kontoyiannis2025].
+
+### Oxidative-Stress Cross-Protection and Immune Evasion {#sec-3-1-3}
+
+The coupling between thermal pre-exposure and oxidative-stress tolerance is mechanistically important because the phagocyte oxidative burst is a principal effector against germinating spores. Thermally primed cells that better withstand superoxide and hydrogen peroxide challenge are, in effect, pre-adapted to innate immune attack without ever having encountered a host [**VERIFY**: data shown in the authors' presentation; source publication to be supplied — see co_editing_notes.md]{.verify}. The stress-activated protein kinase and HOG modules that mediate osmotic and oxidative responses are shared across human-pathogenic fungi and are required for survival within phagocytes [@day2019]. This convergence — environmental stress machinery doubling as immune-evasion machinery — is, in our view, the single most plausible route by which an environmental change could translate into altered clinical behaviour, and it should be the focus of mechanistic work.
+
+## Pigmentation, Melanin and Thermal Buffering {#sec-3-2}
+
+Melanins are multifunctional fungal pigments that absorb radiation, quench free radicals, sequester metals and contribute to cell-wall rigidity; their roles extend well beyond the virulence functions for which they are best known in *Cryptococcus* [@cordero2017]. Melanized fungi can even derive metabolic benefit from ionizing radiation, a finding that expanded the conception of what fungal pigments do [@dadachova2007]. Because pigmentation modulates absorbed radiant energy, it also modulates cell temperature, which makes it a plausible target of selection under warming.
+
+The most direct field evidence comes from a paired sampling design in an urban heat island. Fungi isolated from warmer Baltimore neighbourhoods showed greater thermotolerance and lighter pigmentation than those from cooler neighbourhoods, and the opportunistic pathogen *Rhodotorula mucilaginosa* from warmer areas resisted gradual heat challenge better [@smith2025]. The lighter pigmentation is consistent with reduced radiant heat absorption being advantageous in a hotter microenvironment. The authors are appropriately cautious: cool and warm neighbourhoods in a city differ in tree canopy, sun exposure, pedestrian and animal traffic, impervious surface and socioeconomic history, any of which could drive the observed differences. Treated as a natural experiment with acknowledged confounding, however, this is among the most useful datasets available, and the design deserves replication in other cities and climates.
+
+## Mechanical and Hydrodynamic Stress: The Tornadic Shear Paradigm {#sec-3-3}
+
+Disaster conditions deliver physical stresses that are absent from conventional laboratory culture. Subjecting Mucorales to a tornadic shear challenge that recapitulates the hydrodynamic forces of a tornado has been reported to induce a hypervirulent phenotype in a fruit-fly infection model, an effect dependent on calcineurin and Hsp90 signalling and abolished by cyclosporine A or an Hsp90 inhibitor [@wurster2020] [**VERIFY**: citation not resolvable in bibliographic databases during drafting — authors to supply; see co_editing_notes.md]{.verify}. Three points deserve emphasis. The phenotype is *transient*, reverting when the stress is removed, and is therefore plasticity rather than adaptation in the evolutionary sense. It is mediated by the *same* signalling nodes as thermal adaptation, which suggests a shared stress-integration architecture rather than stress-specific programmes. And it provides a mechanistic hypothesis for an otherwise puzzling clinical observation: the clusters of aggressive, necrotizing cutaneous mucormycosis that follow tornadoes (@sec-7-2).
+
+## Stress Cross-Talk and Why It Matters in the Field {#sec-3-4}
+
+Taken together, Sections 3.1–3.3 describe a system in which thermal, oxidative, osmotic and mechanical stresses feed into a small number of shared signalling nodes — Hsf1/Hsp90, calcineurin, the HOG/SAPK module — whose outputs include morphogenesis, cell-wall remodelling, antifungal tolerance and virulence. A practical consequence follows. In a warming, destabilized environment, fungi will rarely experience one stress at a time; they will experience heat during drought, shear and desiccation during storms, oxidative and thermal stress during fire. If cross-protection is the norm, single-stress dose–response experiments will systematically *underestimate* the phenotypic change that field organisms undergo. Multi-stress experimental designs are therefore not a refinement but a requirement, and we return to this in @sec-10-1.
+
+# Genotypic Adaptation: Mutagenesis, Genome Plasticity and Epigenetic Priming {#sec-4}
+
+If @sec-3 concerned what a fungus does when it is warmed, this section concerns what warming does to its genome. The distinction is not academic: only heritable change can accumulate across generations, respond to selection, and produce lineages that remain altered after conditions normalize.
+
+## Temperature-Stimulated Transposon Mobilization {#sec-4-1}
+
+The most compelling evidence that host temperature is itself mutagenic comes from *Cryptococcus deneoformans*. Mutation-accumulation experiments showed that transposable-element insertion is markedly elevated during growth at 37 °C relative to 30 °C, that mobilization of three element families (Cnl1, T1 and Tcn12) generates insertions across the genome, and that these insertions produce antifungal-resistant mutants in vitro [@gusa2020]. Genome-wide analysis extended the finding in two important ways: heat stress increased mobility across the genome rather than at a few hotspots, and insertions accumulated during murine infection, demonstrating that the process operates in a host rather than only in an incubator [@gusa2023].
+
+This is a mechanistically complete account of a climate-relevant mutagenic process. Elevated temperature — whether environmental or host-derived — increases the rate at which a fungal population generates heritable variants, including drug-resistant ones. It requires no assumptions about ecological correlation.
+
+## Host-Temperature-Induced Mutagenesis and Pan-Resistance {#sec-4-2}
+
+An independent line of evidence comes from *Rhodosporidiobolus fluvialis*, a yeast from a genus containing species intrinsically resistant to azoles and echinocandins, which was recovered from two human infections. Exposure to mammalian body temperature induced mutagenesis and yielded mutants with markedly enhanced hyphal growth and hypervirulence in mice, and temperature-driven mutagenesis also generated pan-resistant derivatives in related species [@huang2024].
+
+The result is striking and deserves the prominence it has received, but its limits should be stated in the same breath: two human cases, one genus, and mutational mechanisms that are not yet fully resolved. Whether this represents a general property of thermally stressed basidiomycetous yeasts or a peculiarity of this lineage is precisely the kind of question the field needs to answer next, and it is answerable with existing methods.
+
+## Aneuploidy, Copy-Number Variation and Loss of Heterozygosity {#sec-4-3}
+
+Large-scale genome rearrangement is the classical fungal route to rapid stress adaptation. Fluconazole resistance in *C. albicans* arises repeatedly through formation of a specific isochromosome carrying resistance-associated genes [@selmecki2006], and whole-ploidy shifts, aneuploidy and loss of heterozygosity constitute a general toolkit for generating phenotypic diversity quickly and, when conditions change, discarding it again [@bennett2014]. In the Pacific Northwest *Cryptococcus gattii* outbreak lineage, copy-number variation contributes cryptic genetic variation among otherwise near-clonal isolates [@steenwyk2016].
+
+These mechanisms are temperature-relevant in two ways. Chromosome missegregation is itself stress-sensitive, and the aneuploid states that stress generates are frequently cross-protective, conferring tolerance to challenges the population has not yet encountered. Aneuploidy thus sits at the boundary between the plastic and the heritable: it is inherited, but it is unstable.
+
+## Epimutation: Heritable Without Sequence Change {#sec-4-4}
+
+*Mucor circinelloides* can acquire resistance to the antifungal FK506 through an RNAi-dependent epimutation that silences the drug-target gene without altering its sequence, is transmitted through mitotic divisions, and reverts on removal of drug pressure [@calo2014]. This is the concrete realization of what the source presentation referred to as epigenetic "priming": a route to heritable phenotypic change that is invisible to sequence-based surveillance and reversible on a timescale between plasticity and mutation. Whether thermal stress — as opposed to drug exposure — can trigger epimutation is, to our knowledge, untested, and we flag it as a priority experiment (@sec-10-4).
+
+## Hsp90 as an Evolutionary Capacitor {#sec-4-5}
+
+The mechanistic bridge between @sec-3 and @sec-4 is chaperone buffering. Hsp90 stabilizes mutant proteins that would otherwise misfold, allowing standing genetic variation to accumulate in a phenotypically cryptic state; when Hsp90 capacity is exceeded — as it is under thermal stress — that variation is released and becomes visible to selection. In fungi this was shown directly for drug resistance: Hsp90 potentiates the emergence of resistance phenotypes from pre-existing variation in *C. albicans* and *S. cerevisiae* [@cowen2005]. The climate implication is elegant and, importantly, testable: a warming environment does not only generate new mutations, it also *unmasks* variation that populations already carry. We grade the mechanism as established and its climate relevance as emerging, because the unmasking argument has not yet been demonstrated in environmental fungal populations under field-realistic thermal regimes.
+
+## Distinguishing Selection from Plasticity: What Each Claim Requires {#sec-4-6}
+
+The literature reviewed above supports a strong statement — thermal stress increases the generation of heritable variation in several fungal genera — and does not yet support the statement most often attributed to it, that climate warming has produced specific human pathogens by selection. The distinction rests on study design, and we set out explicitly what each claim requires (@tbl-claims).
+
+Applied to the best-known climate association in medical mycology, this framework is clarifying. Analysis of 801 clinical *C. auris* genomes from the New York–New Jersey region, using Bayesian hierarchical models to relate resistance determinants and heat-tolerance genes to climatic variables, found *HSP90* and *HSP104* in more than 98% of isolates and reported associations between precipitation and temperature variables and the prevalence of several resistance-associated genes and point mutations [@jara2025]. The finding is interesting and hypothesis-generating. It is also an ecological correlation across clinical isolates whose sampling was determined by healthcare utilization, in a region with intense antifungal exposure, over a period of expanding surveillance: the design cannot separate climatic selection from the many covariates of place and time. Stating this plainly strengthens rather than weakens the chapter's case, because it identifies what the decisive study would look like — environmental rather than clinical sampling, along a climatic gradient, with common-garden phenotyping of the isolates recovered.
+
+| **Claim**                            | **Minimum evidence required**                                                                         | **Common substitute in the literature**            | **Status in fungi** |
+|:----------|:---------------------------|:--------------|:------------------|
+| Stress induces a phenotype           | Controlled exposure, reversibility test                                                               | —                                                  | Established (@sec-3) |
+| Stress is mutagenic                  | Mutation-accumulation lines, sequencing of founders and derivatives                                   | Resistant isolates recovered after stress          | Established for temperature [@gusa2023; @huang2024] |
+| A population has adapted genetically | Common-garden assay of ancestral vs. derived isolates; heritability demonstrated                      | Phenotype differences between field sites          | Emerging [@smith2025] |
+| Climate caused an emergence          | Environmental sampling along a climatic gradient, time-structured genomes, competing drivers modelled | Correlation of clinical incidence with weather     | Not yet achieved for any human fungal pathogen |
+| Warming will produce new pathogens   | Prospective environmental surveillance with phenotyping                                               | Extrapolation from thermal-tolerance distributions | Hypothesis (@sec-2-4) |
+
+: What different adaptation claims require evidentially {#tbl-claims}
+
+# Case Studies in Climate-Associated Emergence {#sec-5}
+
+Six emergences are examined below (@fig-timeline). Each subsection closes with an explicit verdict on the strength of climate attribution, using the grading of @tbl-claims.
+
+![Timeline of climate-associated fungal emergences and growth of the literature. (**A**) Sentinel events, 1964–2025, classified by driver (acute disturbance, chronic warming, drug or other anthropogenic pressure, laboratory mechanism, or unresolved) and by evidence strength (established, emerging or uncertain, hypothesis or projection). (**B**) Annual number of publications on fungi and climate change, 2000–2025, showing an approximately 26-fold increase (468 to 12,230 works; 2025 is the last complete year in the query). *[CAPTION TO CONFIRM — please state the bibliographic database and query used for panel B]*](figures/fig4.png){#fig-timeline}
+
+## *Candida auris* {#sec-5-1}
+
+### A Thermotolerant, Halotolerant Yeast Without an Obvious Reservoir {#sec-5-1-1}
+
+*C. auris* was first described in 2009 and within a decade had been reported from every inhabited continent as a multidrug-resistant, nosocomially transmitted pathogen with a marked capacity to persist on skin and surfaces [@chowdhary2017; @forsberg2018]. Its early epidemiology was genuinely anomalous: four (later five) geographically distinct clades emerged near-simultaneously on three continents, with high intra-clade and low inter-clade genetic similarity — a pattern inconsistent with a single point source spread by travel [@lockhart2017; @chow2020]. European hospital outbreaks followed quickly [@schelenz2016].
+
+The climate hypothesis proposed that *C. auris* was an environmental yeast of wetland or coastal habitats whose thermotolerance and halotolerance were pre-existing adaptations, and that warming allowed it to cross the thermal barrier into birds and then humans, with avian and possibly chelonian carriage explaining the intercontinental distribution [@casadevall2019]. The hypothesis was notable for stating a falsifiable necessary condition: the organism should exist in the environment independent of human activity.
+
+### The Necessary Condition Met, the Sufficient Condition Not {#sec-5-1-2}
+
+That condition has been met. *C. auris* was isolated from salt marsh wetland and sandy beach habitats of the Andaman Islands, including a site with no recorded human activity, and the isolates included both multidrug-susceptible and multidrug-resistant strains clustering with clade I [@arora2021]. The environmental reservoir is therefore real, and the isolate from the pristine site is difficult to explain by anthropogenic contamination.
+
+What has not been shown is that warming *caused* the transition. The alternative and non-mutually-exclusive account — that *C. auris* was an uncommon environmental yeast that entered an unprecedented global ecological niche, the modern intensive care unit, with its dense population of immunocompromised patients, indwelling devices, azole and echinocandin exposure, and skin-to-skin and surface-mediated transmission — accounts for the epidemiology without invoking climate. The near-simultaneity of clade emergence is equally consistent with simultaneous global expansion of the *niche* as with simultaneous crossing of a *thermal barrier*. Climate-resistome correlations in clinical isolates do not resolve the question for the reasons set out in @sec-4-6 [@jara2025].
+
+**Verdict**: environmental reservoir established; thermotolerance established; climate causation remains a hypothesis with one necessary condition satisfied. The decisive experiment — systematic environmental sampling of coastal wetlands along a latitudinal thermal gradient, with common-garden thermotolerance phenotyping — has not been done and is feasible.
+
+## *Cryptococcus gattii* in the Pacific Northwest {#sec-5-2}
+
+Beginning in 1999, *C. gattii* caused an unprecedented outbreak on Vancouver Island, eventually involving several hundred human and animal cases, with pneumonia and meningitis occurring in apparently immunocompetent hosts and the organism recoverable from native trees, soil, air and water [@kidd2004; @galanis2010]. Molecular epidemiology identified a rare genotype (VGIIa) and subsequent population genomics showed that the outbreak lineages arose from a highly recombinant ancestral population, with clonal expansion following [@billmyre2014]. Copy-number variation contributes additional cryptic variation within these near-clonal lineages [@steenwyk2016]. The broader biogeography of the *C. neoformans*/*C. gattii* species complex has been interpreted in terms of continental drift and long-distance dispersal, on timescales far longer than anthropogenic warming [@casadevall2017; @kwonchung2014].
+
+The hypothesis that the 1964 Great Alaska earthquake and tsunami dispersed the organism into the Pacific Northwest is attractive because it links an acute disturbance to a delayed emergence — the disaster axis operating with a multi-decade lag. It should be presented as a hypothesis. The genomic dating and recombination structure constrain but do not establish it, and competing explanations (importation with timber or ornamental plants, unrecognized prior endemicity, climatic suitability shifts) have not been excluded.
+
+**Verdict**: outbreak and environmental establishment are established facts; climatic or disaster-mediated causation is a hypothesis. This case is best used in teaching to illustrate how a disturbance-dispersal hypothesis should be framed and tested.
+
+## *Trichophyton indotineae* {#sec-5-3}
+
+Formerly reported as *T. mentagrophytes* ITS genotype VIII and requiring sequence-based identification, *T. indotineae* causes extensive, inflammatory, recalcitrant dermatophytosis, is frequently terbinafine-resistant through squalene epoxidase mutations, spreads person-to-person, and has disseminated from South Asia worldwide [@uhrla2022]. Rising terbinafine resistance has been documented in dermatophyte isolates in Denmark and France, confirming that resistance is not confined to the region of origin [@astvad2022; @morenosabater2022].
+
+The drivers here are well characterized and largely *not* climatic: unregulated over-the-counter combination creams containing potent topical corticosteroids, incomplete treatment courses, and crowded living conditions. Heat and humidity are established risk factors for dermatophytosis in general, and disaster settings combine skin trauma, congregate living, psychological stress and high temperature and humidity in ways that plausibly increase cutaneous fungal infection [@gupta2025]. Poverty remains the dominant determinant of the global burden of superficial mycoses.
+
+**Verdict**: emergence established; principal driver is antifungal selection pressure and healthcare practice; climate contribution plausible but unquantified. We recommend the chapter say so directly, because overstating the climate link here is the criticism this literature most often attracts.
+
+## *Coccidioides* spp. {#sec-5-4}
+
+Coccidioidomycosis provides the strongest epidemiological climate signal of any human mycosis. Incidence tracks precipitation and temperature cycling, with the characteristic pattern of wet winters followed by hot dry summers favouring soil arthroconidium production and aerosolization [@head2022]. Dust-storm frequency in the southwestern United States has increased and correlates with Valley fever incidence [@tong2017]. Climate-envelope modelling projects substantial northward expansion of the endemic area under warming scenarios [@gorris2019], and surveillance data document rising incidence and recognition of cases outside classical endemic areas [@smith2022; @mazi2022]. Occupational exposure during soil disturbance is well established: outbreaks among solar-power-farm construction workers demonstrated both the risk and the effectiveness of dust-control measures [@wilken2015; @cooksey2017]. The related dimorphic mycoses show comparable geographic reappraisal [@maiga2018; @baddley2011].
+
+Notably, this is an exposure-and-range story rather than an adaptation story: there is no evidence that *Coccidioides* has become more virulent or thermotolerant. Climate acts on the *soil* and on *aerosolization*, not on the pathogen's phenotype.
+
+**Verdict**: climate association established at the level of exposure and geographic range; adaptation not implicated. This is the cleanest example of a climate-driven mycosis and should anchor the chapter's credibility.
+
+## *Sporothrix brasiliensis* {#sec-5-5}
+
+The expanding zoonotic epidemic of sporotrichosis in Brazil and neighbouring countries is driven by cat-to-human transmission of *S. brasiliensis*, a species more virulent than *S. schenckii*, amplified by dense free-roaming feline populations and limited veterinary access [@rodrigues2013; @gremiao2017; @rossow2020]. Urbanization, poverty and animal-population dynamics dominate; temperature and humidity plausibly modulate environmental persistence but have not been shown to drive expansion.
+
+**Verdict**: emergence established; drivers primarily socio-ecological. Useful in the chapter as a contrast case demonstrating that not every fungal emergence needs a climate explanation.
+
+## *Aspergillus fumigatus*: The Comparator Case {#sec-5-6}
+
+The clearest example of human-driven adaptive evolution in a fungal pathogen involves no climate component at all. Environmental use of demethylase-inhibitor fungicides that share a target with medical triazoles selects azole-resistant *A. fumigatus* in agricultural and waste-composting substrates; the resistance mechanisms include specific *cyp51A* alterations with characteristic tandem-repeat promoter insertions [@verweij2009; @snelders2012; @berger2017], a development that raised the question of whether mould-active azoles can be retained for clinical use at all [@verweij2015]. Population genomics has since confirmed that patients acquire resistant genotypes from the environment rather than generating them during therapy [@rhodes2022], and the wider threat of antifungal resistance to human health is now recognized as a policy problem [@fisher2018; @fisher2022]. The evolution of resistance in environmental compartments has become a field in its own right [@vanrhijn2025], supported by curated resistance-mutation resources [@bedard2025].
+
+This case is the right comparator for weighing climate claims for three reasons. The exposure is quantifiable, the selective agent is identified, and the causal chain from environmental compartment to patient has been closed with genomic evidence. No climate–fungus association currently meets that standard. It also illustrates that anthropogenic chemical pressure, unlike temperature, acts on a specific molecular target, which is why its evolutionary signature was detectable.
+
+**Verdict**: established, with a closed causal chain. Climate may interact with this system — through fungicide persistence, crop pathogen pressure and compost temperature — but the demonstrated driver is chemical, not thermal.
+
+# Anthropogenic Co-drivers Beyond Temperature {#sec-6}
+
+A recurring analytical error in this field is to attribute to "climate change" effects that are produced by other components of global environmental change. We treat the principal co-drivers separately.
+
+## Agricultural and Industrial Antifungal Inputs {#sec-6-1}
+
+Fungicide application is the largest deliberate chemical selection pressure humans impose on fungi. Crop pests and pathogens have been shown to shift poleward at measurable rates as temperature isotherms move [@bebber2013], which means fungicide use and warming are *coupled*: warming changes where fungicides are applied, and fungicide application changes the resistance landscape the environmental mycobiota experiences. Disentangling the two requires explicit modelling of both [@vanrhijn2025]. An analogous coupling has been demonstrated for bacterial antimicrobial resistance, where local temperature is associated with higher resistance prevalence independent of prescribing [@macfadden2018], and climate–resistance interactions are now being treated as a distinct research agenda [@kalanxhi2026].
+
+## Plastic Pollution and Plastiphily {#sec-6-2}
+
+Plastic waste creates a novel, globally distributed terrestrial substrate. Microplastics in soil accumulate a distinct mycobiota enriched in human-pathogenic genera, indicating that the plastisphere functions as a selective niche rather than an inert surface [@gkoutselis2021]. Subsequent work linked plastiphily — the capacity to colonize and metabolize plastic — to generic virulence-associated traits in important human pathogenic fungi [@gkoutselis2024]. The mechanistic question raised by the source presentation is well posed and, to our knowledge, unanswered: does growth on microplastic substrates alter growth rate, morphogenesis, oxidative-stress tolerance, antifungal susceptibility, interaction with phagocytes, or virulence in infection models? A factorial design comparing standard agar with agar supplemented with defined microplastic particles, read out across those six phenotypes, would answer it directly (@sec-10-1).
+
+## Urbanization and Urban Heat Islands {#sec-6-3}
+
+Cities warm faster than their surroundings and therefore constitute accessible natural experiments in thermal selection, with the paired-neighbourhood design of @smith2025 as the model (@sec-3-2). Urbanization simultaneously changes host density, healthcare access, animal reservoirs and travel connectivity, all of which shape infectious disease independently of temperature [@baker2022]. The urban heat island is thus both the best available field laboratory for thermal adaptation and one of the most confounded.
+
+## Ultraviolet Radiation, Carbon Dioxide, Aridity and Pollutants {#sec-6-4}
+
+Temperature is one of dozens of environmental variables changing simultaneously; the essential climate variable frameworks used in Earth observation enumerate atmospheric, oceanic and terrestrial quantities in the dozens, many of them relevant to fungal ecology — soil moisture, land surface temperature, fire, permafrost, land cover, above-ground biomass. Analyses that regress fungal outcomes on one or two variables while omitting the rest risk assigning to temperature effects that belong to aridity, radiation or land use. Where pigment and radiation biology are concerned there is a plausible mechanistic pathway for ultraviolet selection specifically [@dadachova2007; @cordero2017], but it has not been tested in a climate framing.
+
+## Travel, Trade and Migration {#sec-6-5}
+
+Global connectivity determines how quickly a locally adapted genotype becomes a global problem. The interaction of travel density, urbanization and climate has been analysed for infectious disease generally [@baker2022], and climate change is expected to increase cross-species transmission opportunities through shifts in host ranges [@carlson2022], with pathogens and planetary change now framed as a single research domain [@carlson2025]. A synthesis of the empirical literature concluded that the majority of known human pathogenic diseases can be aggravated by climatic hazards through multiple pathways [@mora2022]. For fungi specifically, the dispersal argument is strongest for antifungal-resistant genotypes and for nosocomially transmitted organisms, where the relevant vector is patient and healthcare-worker movement rather than atmospheric transport.
+
+# Disaster Microbiology: Acute Perturbations {#sec-7}
+
+## Defining the Field {#sec-7-1}
+
+Disaster microbiology has been proposed as a distinct field concerned with how catastrophic events — meteorological, geological and anthropogenic — alter microbial ecology, dispersal and disease [@smithcasadevall2022], with a mycological subdiscipline following from it [@smith2023]. Its defining feature is timescale. Where chronic warming operates through selection across many generations, a disaster restructures exposure within hours: it aerosolizes soil, breaches host barriers, concentrates susceptible people in shared shelter, interrupts diagnosis and treatment, and subjects fungal cells to combinatorial physical stress. @tbl-disasters and @fig-disasters summarize the event classes, their dominant physical mechanisms and the fungal consequences documented for each.
+
+![Disaster classes, dominant physical mechanisms, fungal or ecological responses and documented human outcomes, with evidence grade (filled circle, established; half-filled, emerging or partial; open, hypothesis). Blue-teal stripe, acute event; red-orange stripe, chronic warming. Content overlaps with @tbl-disasters. *[CAPTION TO CONFIRM — consider whether both this figure and @tbl-disasters are needed]*](figures/fig5.png){#fig-disasters}
+
+| **Event class**             | **Dominant physical mechanism**                     | **Fungal or ecological response**                                 | **Documented human outcome**                                                      | **Evidence** |
+|:------|:-----------|:-------------|:----------------|:----------------------|
+| Tornado, cyclone            | Extreme shear, aerosolization, penetrating trauma   | Transient calcineurin/Hsp90-dependent hypervirulence in Mucorales | Necrotizing cutaneous mucormycosis clusters                                       | Experimental + outbreak [@wurster2020; @neblettfanfair2012] [**VERIFY**]{.verify} |
+| Flood, storm surge          | Water damage, sustained humidity, sewage mixing     | Indoor mould amplification; dispersal of resistant organisms      | Mould and endotoxin exposure; invasive mould infection in immunocompromised hosts | Established [@chew2006; @rao2007; @toda2023] |
+| Wildfire                    | Smoke as viable bioaerosol vector; soil disturbance | Long-range transport of viable propagules                         | Occupational coccidioidomycosis; hypothesized range expansion                     | Emerging [@kobziar2022; @ellington2024; @wilken2015] |
+| Dust storm, drought cycling | Soil aerosolization after wet–dry cycling           | Arthroconidium release                                            | Valley fever incidence tracking dust and precipitation                            | Established association [@tong2017; @head2022] |
+| Earthquake, tsunami         | Soil displacement, aspiration, trauma               | Dispersal into new niches; direct inoculation                     | Post-disaster pulmonary and wound mycoses                                         | Case series [@benedict2014] |
+| Permafrost thaw             | Release of long-dormant propagules                  | Revival of cold-preserved taxa                                    | None documented                                                                   | Hypothesis [@wu2022; @alempic2023] |
+| Heat wave, chronic warming  | Sustained thermal selection and mutagenesis         | Selection for thermotolerance; temperature-induced mutagenesis    | Expanded candidate pathogen pool                                                  | Mechanism established; epidemiological link emerging [@gusa2023; @huang2024; @smith2025] |
+
+: Disaster classes, mechanisms and documented fungal consequences {#tbl-disasters}
+
+## Wind: Tornadoes and Tropical Cyclones {#sec-7-2}
+
+The paradigm case is the 2011 Joplin, Missouri tornado, after which a cluster of necrotizing cutaneous mucormycosis due to *Apophysomyces* species occurred among injured survivors, with penetrating trauma and wound contamination as the shared exposure and high mortality despite surgery and antifungal therapy [@neblettfanfair2012]. Two features of these infections have long been puzzling: their aggressiveness in previously healthy people, and their occurrence in organisms that are ubiquitous yet rarely cause such disease. The shear-stress experiments discussed in @sec-3-3 offer a mechanistic hypothesis — that the disaster event itself transiently reprogrammes the fungus toward hypervirulence before inoculation [@wurster2020] [**VERIFY**]{.verify} — and they generate a clear prediction: isolates recovered early after such events should show the transient phenotype, which should decay in culture. To our knowledge this prediction has not been tested on outbreak isolates, and it could be.
+
+## Water: Floods, Humidity and Sewage {#sec-7-3}
+
+Flooding produces the most reproducible post-disaster fungal exposure. After Hurricane Katrina, airborne and settled mould concentrations in flooded New Orleans homes reached levels far above those in non-flooded reference homes, with high endotoxin and glucan burdens and *Aspergillus* and *Penicillium* prominent among the recovered taxa [@chew2006; @rao2007]. Invasive disease is the exception rather than the rule and concentrates in immunocompromised residents and in those with heavy remediation exposure; surveillance after Hurricane Harvey documented invasive mould infections in the affected population [@toda2023]. Floodwater mixed with sewage additionally disperses organisms and resistance determinants across the built environment, a mechanism better characterized for bacteria than for fungi and worth systematic study.
+
+## Fire: Pyroaerobiology {#sec-7-4}
+
+Wildfire smoke was long treated as a chemical and particulate hazard. It is also a biological one: smoke plumes carry viable microbial cells, including fungi, and wildland fire alters the composition and diversity of the atmospheric microbiome, with smoke acting as a transport medium rather than a sterilizing agent [@kobziar2022]. Dispersal of microbes from smoke into soils downwind has since been demonstrated [@ellington2024]. The clinical corollary — that wildfire could expand the range or exposure burden of soil-dwelling dimorphic fungi such as *Coccidioides* — is a plausible hypothesis with epidemiological support from soil-disturbance occupational outbreaks [@wilken2015; @cooksey2017], but direct evidence that fire-borne propagules cause human infection is not yet available. The field is young and, given the trajectory of fire regimes, likely to matter.
+
+## Earth and Ice: Seismic Events and Permafrost {#sec-7-5}
+
+Earthquakes and tsunamis cause fungal disease through aspiration of contaminated water and direct wound inoculation, and case series after natural disasters document pulmonary and cutaneous mycoses including mucormycosis and aspergillosis [@benedict2014]. Permafrost thaw has attracted attention as a potential reservoir of long-dormant organisms; the evidence base consists of revival of viable microorganisms and giant viruses from ancient permafrost, which establishes physical possibility without establishing epidemiological risk [@wu2022; @alempic2023]. For fungi specifically the relevant risk is more likely ecological — cold-adapted taxa entering warming soils — than the emergence of an ancient human pathogen, and the chapter should say so rather than amplify a speculative narrative.
+
+## The Host Side of Disaster {#sec-7-6}
+
+Disasters act at least as strongly on hosts as on fungi. Barrier disruption through trauma and burns, congregate sheltering, interruption of antifungal prophylaxis and immunosuppressive regimens, displacement, malnutrition and psychological stress all increase susceptibility. Climate exposures themselves have measurable effects on immune function, with evidence spanning innate and adaptive compartments, epithelial barrier integrity, oxidative stress and pro-inflammatory signalling [@imberti2025]; warming and pollution are independently implicated in epithelial barrier dysfunction in the airway and skin [@celebisozener2023]. Insect bites, which shift with warming-driven changes in arthropod distribution, are an underappreciated route of cutaneous inoculation of moulds in immunocompromised patients [@kontoyiannis2019], and the possibility that warming increases invertebrate-associated cutaneous invasive fungal infection has been raised explicitly [@kontoyiannis2025]. These host-side effects fall disproportionately on poor populations, in whom pre-existing immune compromise, occupational exposure and delayed care compound one another [@jenks2023].
+
+# Ecosystem and One Health Dimensions {#sec-8}
+
+## Plant Pathogens, Food Security and Mycotoxins {#sec-8-1}
+
+The climate signal in plant-pathogenic fungi is stronger and longer established than anything in medical mycology. Crop pests and pathogens have moved poleward at rates consistent with warming isotherms [@bebber2013]; infection risk for major crop pathogens tracks yield-relevant climate variables globally [@chaloner2021]; and the implications for food security, together with the adaptation options available, have been synthesized in detail [@singh2023].
+
+Mycotoxin risk is shifting with it. Modelling of aflatoxin B1 in European maize projects increases in contamination risk under warming scenarios, with the risk boundary moving northward [@battilani2016], and reviews of climate effects on mycotoxin-producing fungi and their toxin profiles reach concordant conclusions [@medina2017; @zingales2022; @casu2024]. This matters for a chapter on adaptation because mycotoxin production is a stress-responsive secondary-metabolic trait: the same warming that shifts fungal geography also shifts what these fungi synthesize.
+
+## Wildlife Panzootics as Natural Thermal Experiments {#sec-8-2}
+
+The clearest demonstrations that climate-associated fungal disease can cause mass mortality come from ectothermic and heterothermic animals, not humans. Chytridiomycosis caused by *Batrachochytrium dendrobatidis* has driven the greatest documented loss of biodiversity attributable to a single pathogen, affecting hundreds of amphibian species [@scheele2019; @fisher2020]; its congener *B. salamandrivorans* emerged subsequently as a lethal pathogen of salamanders [@martel2013]. Thermal biology is central: *B. dendrobatidis* grows optimally well below mammalian body temperature and its thermal performance varies among isolates [@stevenson2013], and climate and temperature variability have been linked to the pattern of amphibian declines [@rohr2010]. White-nose syndrome, caused by the cold-adapted *Pseudogymnoascus destructans*, kills hibernating bats precisely because torpor lowers body temperature into the fungus's permissive range [@blehert2009].
+
+These systems support the chapter's central mechanistic claim from the opposite direction. Disease occurs where host and fungal thermal ranges *overlap*; the mammalian thermal barrier is not a metaphor but a quantitative constraint, and raising host temperature above the pathogen's ceiling is protective while lowering it is catastrophic. They also illustrate that the fungal threats warming has already realized are ecological rather than clinical [@fisher2012; @case2025].
+
+## Fungi as Mitigators: The Other Side of the Ledger {#sec-8-3}
+
+A chapter that treats fungi only as hazards would misrepresent the kingdom. Fungal catabolic versatility underpins bioremediation of hydrocarbons, pesticides, dyes and other hazardous chemicals [@harms2011], and fungal degradation of recalcitrant synthetic polymers — including polyester–polyurethane by *Aspergillus tubingensis* — is an active applied field [@khan2017]. At ecosystem scale, mycorrhizal networks constitute one of the largest annual terrestrial carbon fluxes [@hawkins2023], and fungal contributions to Earth-system processes are now argued to warrant explicit representation in global change science [@case2025]. Fungal adaptation to a warming planet is therefore not only a threat model; it is also a determinant of whether terrestrial carbon sinks persist.
+
+# Is a Human Fungal Pandemic Plausible? {#sec-9}
+
+## The Two Positions {#sec-9-1}
+
+The popular imagination has been captured by the premise of a thermally adapted fungus turning epidemic in humans — a premise drawn from entomopathogenic fungi that manipulate insect behaviour [@hughes2011] and elaborated in fiction. The scientific version of the argument is more modest: warming increases the number of thermotolerant fungal species, urban warming accelerates fungal growth, the thermal gradient between mammals and environmental fungi is narrowing from both ends, and the overwhelming majority of fungal species remain uncharacterized [@garciasolache2010; @casadevall2020; @nnadi2021]. Against it: the thermal exclusion gradient remains wide (@sec-2-2); thermal adaptation in natural populations is slow relative to the timescale of concern; the assembly of pathogenicity requires multiple traits beyond thermotolerance [@rokas2022]; and fungal host tropism is typically narrow, with no precedent for a host jump of the required magnitude.
+
+## What Would Have to Be True {#sec-9-2}
+
+Rather than adjudicate, we propose criteria. A fungal lineage capable of pandemic behaviour in humans would need to demonstrate, jointly: (i) *heritable* growth and replication at 36–37 °C, not merely survival; (ii) evasion of innate immune effectors in immunocompetent hosts, not only in neutropenic or transplant populations; (iii) an efficient route of human-to-human transmission, or an environmental exposure route of very high density; (iv) a reservoir in which selection is sustained between outbreaks; and (v) sufficient genetic variability to escape the small number of available antifungal classes.
+
+Assessed against these criteria, *C. auris* is instructive: it satisfies (i), (iv) and (v), partially satisfies (iii) through healthcare-associated transmission, and fails (ii), since disease remains concentrated in patients with substantial comorbidity. Crucially, *C. auris* did not need to acquire thermotolerance — it appears already to have possessed it [@casadevall2019; @arora2021]. The organism that comes closest to pandemic criteria therefore does so by a route that has little to do with warming.
+
+## Surveillance Signals Worth Monitoring {#sec-9-3}
+
+The criteria above imply specific, monitorable indicators: environmental isolation of thermotolerant opportunists from habitats where they were previously absent; within-host emergence of resistance during therapy in genera not previously known for it; clusters of invasive disease in immunocompetent hosts; antifungal resistance appearing in environmental isolates ahead of clinical ones [@vanrhijn2025; @bedard2025]; and post-disaster infection clusters with unusual organisms. None of these requires new technology — only the will to look systematically.
+
+# A Research and Response Agenda {#sec-10}
+
+## Experimental Systems {#sec-10-1}
+
+Progress in this field is limited by model systems more than by ideas. Invertebrate mini-host models, in particular *Drosophila melanogaster*, allow throughput-scale virulence comparison across many isolates and temperatures and have been validated for the study of medically important fungi, including Mucorales [@chamilos2006; @chamilos2008]. Their central advantage for climate work is poikilothermy: host temperature becomes an independent experimental variable rather than a fixed constant, which no mammalian model permits. A design of this kind — several *T. indotineae* isolates grown at 37 °C and 42 °C, with and without topical corticosteroid exposure, compared against *T. rubrum* and *Rhizopus* controls in a thoracic-pricking fly model — would test strain-to-strain variability in thermal virulence enhancement in a dermatophyte, which to our knowledge has not been done.
+
+For cutaneous pathogens, three-dimensional human tissue systems are the necessary complement: reconstructed human epidermis, skin organoids and porcine or human skin explants each permit infection at physiological skin surface temperature (roughly 32–34 °C) rather than core temperature, which is the thermal niche that actually matters for dermatophytes. For adaptation itself, serial passage or continuous culture under controlled thermal regimes remains the decisive approach, with directed evolution of thermotolerance in filamentous fungi as proof of principle [@decrecy2009], and with founder archiving and common-garden re-phenotyping built into the design (@tbl-claims).
+
+## Integrating Climate Data with Genomic Surveillance {#sec-10-2}
+
+The methodological gap identified in @sec-4-6 is addressable. What is needed is environmental rather than clinical sampling, structured along climatic gradients (latitudinal, urban–rural, or before-and-after disturbance), with isolates archived, sequenced and phenotyped under common-garden conditions, and with competing drivers — antifungal and fungicide exposure, land use, host density, surveillance intensity — measured rather than assumed. Essential climate variable products provide the covariates at usable resolution. The paired-neighbourhood urban heat island design [@smith2025] is the smallest version of this study; the largest would be a multi-country environmental *C. auris* survey testing the wetland hypothesis directly.
+
+## Multidisciplinary and Policy Infrastructure {#sec-10-3}
+
+The questions raised here cannot be answered within mycology alone. They require climatology and remote sensing for exposure modelling, engineering and building science for post-disaster remediation, veterinary and wildlife science for reservoir work, social science and health economics for the susceptibility gradient, and public health policy for surveillance mandates. Fungal disease remains largely absent from national climate–health adaptation planning despite the WHO priority pathogen framework [@fisher2023], and antifungal resistance sits awkwardly outside much of the antimicrobial-resistance policy architecture [@fisher2022; @kalanxhi2026]. Two concrete asks follow: inclusion of invasive fungal disease in climate–health surveillance, and environmental antifungal-resistance monitoring alongside agricultural fungicide reporting. Public and professional education is the third, and the least expensive.
+
+## Ten Priority Questions {#sec-10-4}
+
+1. How do interactions with plants, bacteria and amoebae in the environment shape fungal virulence and resistance traits that later manifest in mammalian hosts?
+2. What is the eco-evolutionary framework for fungal thermal adaptation, and which variables besides mean temperature — precipitation, diurnal and seasonal thermal variance, light regime, pollution, urbanization — modulate it?
+3. Is climate-associated adaptation in fungal pathogens driven by genetic microevolution and selection, by reversible plasticity, or by epigenetic mechanisms such as epimutation?
+4. Can thermal stress, as distinct from drug exposure, induce epimutation?
+5. Does growth on microplastic substrates alter fungal growth, morphogenesis, stress tolerance, antifungal susceptibility, phagocyte interaction and virulence?
+6. Do post-disaster clinical isolates display the transient hypervirulent phenotype predicted by shear-stress experiments, and how quickly does it decay in culture?
+7. Which fungal pathogens are climate-insensitive, and what does their insensitivity teach us about the mechanisms operating in the sensitive ones?
+8. Does wildfire smoke transport viable propagules of dimorphic pathogens at epidemiologically relevant doses?
+9. What is the relative contribution of climatic versus antifungal-selection pressure to the emergence of resistant dermatophytes and *A. fumigatus* genotypes?
+10. Can environmental surveillance detect thermotolerant opportunists before they appear clinically, and at what cost per detection?
+
+# Conclusions {#sec-11}
+
+Three conclusions follow from the evidence reviewed here. First, the mechanistic case that thermal and physical stress change fungal phenotype and genotype is now strong and no longer speculative: growth at elevated temperature increases virulence through defined signalling pathways, host temperature mobilizes transposable elements and induces mutations that confer resistance and hypervirulence, and physical stresses characteristic of extreme weather act through the same stress-integration architecture. These are laboratory-established mechanisms with identified molecular components, not correlations.
+
+Second, the epidemiological case that climate change has produced specific new human fungal pathogens remains unproven, and the gap is one of study design rather than of plausibility. The emergences most often cited as evidence — *C. auris*, *T. indotineae*, azole-resistant *A. fumigatus* — each have better-documented non-climatic drivers, while the mycosis with the clearest climate signal, coccidioidomycosis, involves no fungal adaptation at all. Where climate-associated fungal disease has demonstrably caused mass mortality, it has been in ectothermic and hibernating animals, exactly where thermal overlap between host and pathogen is greatest.
+
+Third, the prospect of a human fungal pandemic driven by thermal adaptation remains improbable on current evidence, and stating this clearly is part of the scientific responsibility of this field. The credible risks are more mundane and more tractable: wider geographic exposure to established pathogens, more frequent post-disaster infection clusters, an enlarging environmental reservoir of antifungal resistance, and a growing population of susceptible hosts. All four are addressable with existing tools, and none requires a pandemic to justify attention.
+
+## Acknowledgements {.unnumbered}
+
+*To be completed by the authors.*

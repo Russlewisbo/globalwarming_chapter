@@ -1,0 +1,42 @@
+project:
+  type: manuscript
+  output-dir: _manuscript
+
+manuscript:
+  article: index.qmd
+  # Add any supporting notebooks or scripts here, e.g.
+  # notebooks:
+  #   - notebook: figures/fig2_thermal_ranges.qmd
+  # resources:
+  #   - references.csv
+
+number-sections: true
+number-depth: 3
+bibliography: references.bib
+csl: springer-basic-author-date.csl
+link-citations: true
+crossref:
+  fig-prefix: Fig.
+  tbl-prefix: Table
+  sec-prefix: Sect.
+  ref-hyperlink: true
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    css: styles.css
+    comments:
+      hypothesis: false
+  docx:
+    toc: false
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    # Uncomment and supply a Word template to control styles for submission:
+    # reference-doc: springer-reference.docx
+
+execute:
+  freeze: auto
