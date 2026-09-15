@@ -1,0 +1,29 @@
+Use case: style-transfer. Redraw the attached scientific flow diagram as a polished medical-journal figure inspired by NEJM editorial graphics, using exclusively clean sans-serif typography (Arial/Helvetica). White background, restrained muted rust, blue, purple and sage accents, very pale flat panel fills, thin rules, elegant spacing and consistent alignment. No textures, dotted patterns, gradients, shadows, logos or decorative illustrations. Landscape high resolution. Preserve ALL scientific text and the original connectivity; this is a visual redesign only. Three columns with headings "Climate drivers", "Fungal mediating processes", "Outcomes". Left stacked panels CHRONIC and ACUTE, middle three stacked panels Selection, Dispersal, Niche change, right four stacked outcome panels. Use subtle colored small-cap panel headings instead of oversized solid title bars, ample white space and clearly legible body text. Bottom socioeconomic strip pale sage with clean border and upward arrows to niche change and host susceptibility. Route arrows neatly through whitespace with thin gray lines and clear arrowheads, reproduce shared branch buses of original.
+Verbatim content:
+CHRONIC:
+Rising mean temperature
+Aridification, humidity shift
+Elevated CO₂ and UV
+Glacial retreat, permafrost thaw
+Sea-level rise
+ACUTE:
+Tornadoes, cyclones
+Floods
+Wildfires
+Dust storms
+Earthquakes, tsunamis
+Selection:
+thermotolerance · stress-response rewiring · drug-resistance determinants
+Dispersal:
+aerosolisation · smoke and dust transport · floodwater · global travel and trade
+Niche change:
+urban heat islands · plastic substrates · fungicide landscape · altered bio-reservoirs
+Outcomes:
+Increased exposure
+Expanded geographic range
+Increased virulence or resistance of adapted lineages
+Increased host susceptibility
+trauma, crowding, immune dysregulation, reduced healthcare access
+Bottom strip:
+Socioeconomic gradient: poverty, conflict, migration, health inequality
+Keep all text accurate, use sensible wrapping without broken words. Give each column adequate width. Overall sophisticated publication figure, less heavy and crowded than original.
