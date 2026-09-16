@@ -1,0 +1,15 @@
+Restyle this scientific table as a polished NEJM-inspired medical-journal figure, using ONLY sans serif Helvetica/Arial-like typography, including sans serif italic Mucorales. Preserve all five columns and seven rows, every word verbatim, and evidence classifications. White background, restrained blue-teal and rust orange accents, fine gray horizontal rules, subtle alternating light gray row shading, balanced column widths, generous cell padding, crisp readable text. Bold column headers and event names, regular body. No logo or added title. Landscape high-resolution output.
+Columns: Event class | Dominant physical mechanism | Fungal or ecological response | Documented human outcome | Evidence.
+Rows, exact text:
+Tornado / cyclone | extreme shear, aerosolisation, penetrating trauma | transient calcineurin- and Hsp90-dependent hypervirulence in Mucorales | necrotising cutaneous mucormycosis clusters | solid black circle.
+Flood / storm surge | water damage, sustained high humidity, sewage mixing | mould amplification indoors; dispersal of resistant organisms | mould and endotoxin exposure; invasive mould infection in the immunocompromised | solid black circle.
+Wildfire | smoke as a viable aerosol vector; soil disturbance | long-range transport of viable spores (pyroaerobiology) | occupational coccidioidomycosis; hypothesised range expansion | half-filled circle, left black right white.
+Dust storm / drought cycling | soil aerosolisation after wet-dry cycling | arthroconidia release | Valley fever incidence tracks dust and precipitation cycles | solid black circle.
+Earthquake / tsunami | soil displacement, aspiration of contaminated water, trauma | dispersal into new niches; direct inoculation | post-tsunami pulmonary and wound mycoses | half-filled circle, left black right white.
+Permafrost thaw | release of long-dormant propagules | revival of cold-preserved taxa | speculative reservoir risk | open black-outline white circle.
+Heat wave / chronic warming | sustained thermal selection | selection for thermotolerance; temperature-induced mutagenesis | expanded pool of species able to grow at host temperature | half-filled circle, left black right white.
+Slim blue-teal left stripes for first five rows; slim rust-orange left stripes with subtle diagonal hatching for final two rows, consistent with footnote.
+Footnote verbatim: "Left stripe: blue-teal = acute event (hatched red-orange = chronic warming). Evidence: filled = established, half = emerging or partial, open = hypothesis."
+Avoid omissions, duplicated words, font serifs, decorative elements. This is a typography and layout restyling only; preserve all scientific statements.
+
+Generated using the built-in image generation tool.
