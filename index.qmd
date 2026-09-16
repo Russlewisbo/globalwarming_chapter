@@ -62,7 +62,7 @@ A leading explanation for why relatively few fungi infect mammals is that mammal
 
 This framework makes a clear, testable prediction: sustained environmental warming should favour fungi that tolerate higher temperatures. Over time, more fungal species could become able to grow at mammalian body temperatures, increasing the number that could potentially cause infections, particularly in vulnerable hosts [@garciasolache2010; @casadevall2020].
 
-## The Narrowing thermal exclusion zone
+## The narrowing thermal exclusion zone {#sec-2-2}
 
 Two trends are narrowing this temperature gap (@fig-thermal). The environment is warming, while human core temperature has fallen. A study of three groups covering more than 150 years of US records found that average body temperature fell steadily by about 0.03 °C per decade of birth. The modern average is now close to 36.6 °C, below the traditional value of 37.0 °C [@protsiv2020]. The gap is therefore shrinking from both sides.
 
@@ -94,7 +94,7 @@ The strongest objection to the thermal restriction argument is the lack of speci
 | Directed/experimental evolution of thermotolerance | Filamentous fungi | Continuous culture | Established (proof of principle) | [@decrecy2009] |
 | Environmental thermal selection generating new human pathogens | — | — | Hypothesis | [@casadevall2019; @seidel2024] |
 
-: Mechanisms of fungal thermal and physical-stress adaptation, with evidence grade
+: Mechanisms of fungal thermal and physical-stress adaptation, with evidence grade {#tbl-mechanisms}
 
 # Phenotypic Adaptation: Plasticity Under Thermal and Physical Stress {#sec-3}
 
@@ -174,7 +174,7 @@ The literature reviewed above supports the concept that thermal stress increases
 | Climate caused an emergence | Environmental sampling along a climatic gradient, time-structured genomes, competing drivers modelled | Correlation of clinical incidence with weather | Not yet achieved for any human fungal pathogen |
 | Warming will produce new pathogens | Prospective environmental surveillance with phenotyping | Extrapolation from thermal-tolerance distributions | Hypothesis (@sec-2-4) |
 
-: How different adaptation claims require different types of evidence
+: How different adaptation claims require different types of evidence {#tbl-claims}
 
 # Case Studies in Climate-Associated Emergence {#sec-5}
 
@@ -272,7 +272,7 @@ Disaster microbiology has been proposed as a distinct field concerned with how c
 | Permafrost thaw | Release of long-dormant propagules | Revival of cold-preserved taxa | None documented | Hypothesis [@wu2022; @alempic2023] |
 | Heat wave, chronic warming | Sustained thermal selection and mutagenesis | Selection for thermotolerance; temperature-induced mutagenesis | Expanded candidate pathogen pool | Mechanism established; epidemiological link emerging [@gusa2023; @huang2024; @smith2025] |
 
-: Disaster classes, mechanisms and documented fungal consequences
+: Disaster classes, mechanisms and documented fungal consequences {#tbl-disasters}
 
 ## Wind: Tornadoes and tropical cyclones {#sec-7-2}
 
