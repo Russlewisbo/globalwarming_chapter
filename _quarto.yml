@@ -35,8 +35,7 @@ format:
     toc: false
     fig-cap-location: bottom
     tbl-cap-location: top
-    # Uncomment and supply a Word template to control styles for submission:
-    # reference-doc: springer-reference.docx
+    reference-doc: custom-reference.docx
 
 execute:
   freeze: auto

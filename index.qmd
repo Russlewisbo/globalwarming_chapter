@@ -167,7 +167,7 @@ The literature reviewed above supports the concept that thermal stress increases
 *Candida auris* offers the field's most heavily studied climate association, and the framework clarifies what that association can and cannot establish. An analysis of 801 clinical *C. auris* genomes from the New York–New Jersey region used Bayesian hierarchical models to relate resistance determinants and heat-tolerance genes to climatic variables. HSP90 and HSP104 were present in more than 98% of isolates, and the authors reported associations between precipitation and temperature variables and the prevalence of several resistance-associated genes and point mutations [@jara2025]. The result was nevertheless, only hypothesis-generating. It is also an ecological correlation across clinical isolates whose sampling was determined by healthcare utilization, in a region of intense antifungal exposure, over a period of expanding surveillance. That design cannot separate climatic selection from the many covariates of place and time. Testing the hypothesis properly will require sampling the environment rather than the clinic, longitudinally and along a climatic gradient, with common-garden phenotyping to show that recovered isolates differ heritably in thermal tolerance and not merely in provenance.
 
 | **Claim** | **Minimum evidence required** | **Common substitute in the literature** | **Status in fungi** |
-|:-----------------|:------------------|:-----------------|:-----------------|
+|:-----------------|:-----------------|:-----------------|:-----------------|
 | Stress induces a phenotype | Controlled exposure, reversibility test | — | Established (@sec-3) |
 | Stress is mutagenic | Mutation-accumulation lines, sequencing of founders and derivatives | Resistant isolates recovered after stress | Established for temperature [@gusa2023; @huang2024] |
 | A population has adapted genetically | Common-garden assay of ancestral vs. derived isolates; heritability demonstrated | Phenotype differences between field sites | Emerging [@smith2025] |
@@ -272,7 +272,7 @@ Disaster microbiology has been proposed as a distinct field concerned with how c
 | Permafrost thaw | Release of long-dormant propagules | Revival of cold-preserved taxa | None documented | Hypothesis [@wu2022; @alempic2023] |
 | Heat wave, chronic warming | Sustained thermal selection and mutagenesis | Selection for thermotolerance; temperature-induced mutagenesis | Expanded candidate pathogen pool | Mechanism established; epidemiological link emerging [@gusa2023; @huang2024; @smith2025] |
 
-: Disaster classes, mechanisms and documented fungal consequences {#tbl-disasters}
+: Disaster classes, mechanisms and documented fungal consequences{#tbl-disasters}
 
 ## Wind: Tornadoes and tropical cyclones {#sec-7-2}
 
